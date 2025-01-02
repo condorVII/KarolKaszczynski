@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korona Gór Polski - 7 Najwyższych szczytów</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div id="logo">
+        <div id="logo2">
+            7 Najwyższych Szczytów Korony Gór Polski
+        </div>
+    </div>
+    <div id="menu">
+        <table id="menu_table">
+            <tr>
+                <td class="choice" onclick="change_main(main1,main2,main3,main4,main5,main6,main7,main0,main8)">Radziejowa</td>
+                <td class="choice" onclick="change_main(main2,main1,main3,main4,main5,main6,main7,main0,main8)">Turbacz</td>
+                <td class="choice" onclick="change_main(main3,main2,main1,main4,main5,main6,main7,main0,main8)">Tarnica</td>
+                <td class="choice" onclick="change_main(main4,main2,main3,main1,main5,main6,main7,main0,main8)">Śnieżnik</td>
+                <td class="choice" onclick="change_main(main5,main2,main3,main4,main1,main6,main7,main0,main8)">Śnieżka</td>
+                <td class="choice" onclick="change_main(main6,main2,main3,main4,main5,main1,main7,main0,main8)">Babia Góra</td>
+                <td class="choice" onclick="change_main(main7,main2,main3,main4,main5,main6,main1,main0,main8)">Rysy</td>
+            </tr>
+        </table>
+    </div>
+    <div id="menu_tel">
+        <table>
+            <tr>
+                <td class="choice" onclick="change_main(main1,main2,main3,main4,main5,main6,main7,main0,main8)" colspan="4">Radziejowa</td>
+                <td class="choice" onclick="change_main(main2,main1,main3,main4,main5,main6,main7,main0,main8)" colspan="4">Turbacz</td>
+                <td class="choice" onclick="change_main(main3,main2,main1,main4,main5,main6,main7,main0,main8)" colspan="4">Tarnica</td>
+            </tr>
+            <tr>
+                <td class="choice" onclick="change_main(main4,main2,main3,main1,main5,main6,main7,main0,main8)" colspan="3">Śnieżnik</td>
+                <td class="choice" onclick="change_main(main5,main2,main3,main4,main1,main6,main7,main0,main8)" colspan="3">Śnieżka</td>
+                <td class="choice" onclick="change_main(main6,main2,main3,main4,main5,main1,main7,main0,main8)" colspan="3">Babia Góra</td>
+                <td class="choice" onclick="change_main(main7,main2,main3,main4,main5,main6,main1,main0,main8)" colspan="3">Rysy</td>
+            </tr>
+        </table>
+    </div>
+    <div id="main">
+        <div id="home">
+            <img src="imgs/home.png" alt="ikonka domu" onclick="change_main(main0,main1,main2,main3,main4,main5,main1,main7,main8)" id="home_img">
+        </div>
+        <div id="main0">
+            <h1>Korona gór polski</h1>
+            <div class="info">
+                jest to lista 28 najwyższych szczytów wszystkich pasm górskich Polski. Została ustanowiona w 1997 i od tego czasu zrzesza wszelkich ludzi do jej zdobycia. Jest to bardzo interesująca inicjatywa zachęcająca do turystyki górskiej.<br><br><br>
+                Na tej stronie wypisuje i mówie bardziej szczegółowo o 7 jej najwyższych szczytach.<br><br>
+                Jeśli chcesz się dowiedzieć więcej o koronie odwiedź oficjalną stronę <a href="https://kgp.info.pl/" target="_blank">Klubu Zdobywców Korony Gór Polski</a> (otwiera się w nowej karcie).<br><br><br>
+                <div id="film">
+                    Film poradnikowy z wejścia na rysy:<br>
+                    (UWAGA NA GŁOŚNOŚĆ)<br><br>
+                    <video width="500" height="885" id="vid1" controls>
+                        <source src="video/rysy1.mp4" type="video/mp4">
+                    </video>
+                    <video width="400" height="710" id="vid1_tel" controls>
+                        <source src="video/rysy1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <br><br><br><br>
+
+                <p id="quiz_nav">Oto mały quiz na temat 7 najwyższych gór Korony Gór Polski: </p>
+                <p id="quiz" onclick="change_main(main8,main1,main2,main3,main4,main5,main6,main1,main0)">Link do quizu</p>
+
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#film">Film</a><br>
+                <a href="#quiz_nav">Quiz</a>
+            </div>
+
+        </div>
+        <div id="main1">
+            <h1>Radziejowa</h1>
+            <div class="gallery" id="galeria_radziejowa">
+                <div class="gallery2">
+                    <img src="imgs/radziejowa0.png" class="big_img" id="img1_0" alt="radziejowa0">
+                    <img src="imgs/radziejowa1.png" class="big_img" id="img1_1" alt="radziejowa1">
+                    <img src="imgs/radziejowa2.png" class="big_img" id="img1_2" alt="radziejowa2">
+                </div>
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down1()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up1()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Radziejowa</b> (1266,5 m) – najwyższy szczyt Beskidu Sądeckiego należący do Korony Gór Polski. Nazwa szczytu pochodzi od osoby o nazwisku lub przydomku Radziej. <br><br>
+                <h3 id="topografia_radziejowa">Topografia</h3>
+                Znajduje się w głównym grzbiecie Pasma Radziejowej, pomiędzy Wielkim Rogaczem, od którego oddziela ją przełęcz Żłobki, a masywem Złomistego Wierchu, położonego za Przełęczą Długą. Przed Przełęczą Długą znajduje się jeszcze niewybitna kulminacja Małej Radziejowej (1207 m). <br><br>Główny grzbiet, patrząc od zachodu, skręca na Radziejowej w prawo, na południe, natomiast na północny wschód odbiega boczny grzbiet kulminujący w Jaworzynie, biegnący ku dolinie Wielkiej Roztoki, a na północ odgałęzia się niewielki grzbiet Magorzycy. Przez główny grzbiet Radziejowej biegnie granica między wsią Jaworki w powiecie nowotarskim i Roztoką Ryterską w powiecie nowosądeckim.<br><br><br>
+                <h3 id="przyroda_radziejowa">Przyroda</h3>
+                Na północnym stoku Radziejowej znajduje się rezerwat przyrody Baniska z jaskinią Bania w Radziejowej oraz małe osuwiskowe jeziorko Młaka, w pobliżu miejsce zwane Ołtarz, z niewielką wychodnią skalną oraz śladami jaskini szczelinowej u podnóża. Na południowym stoku w pobliżu rozejścia dróg (przełęcz Żłobki – Zawory) znajduje się wydajne źródło okresowe nazywane lokalnie Smocze Gardło.<br><br>
+                Radziejowa zbudowana jest z piaskowców. Zarówno wierzchołek, jak i stoki Radziejowej są niemal całkowicie porośnięte lasem. Dużą osobliwością jest jedyne w całej Polsce stanowisko pierwiosnka omączonego. Znajduje się na niewielkiej polanie na wysokości 800 m. Odkryte zostało w 1959 r., później wielokrotnie potwierdzone (m.in. w 2000 r.).<br><br><br>
+                <h3 id="turystyka_radziejowa">Turystyka</h3>
+                W 2006 r. na Radziejowej oddana została do użytku drewniana wieża widokowa o wysokości około 20 m. W czerwcu 2010 roku została poważnie uszkodzona, prawdopodobnie przez piorun. Po gruntownym remoncie była znów czynna. <br><br>Od dnia 15 listopada 2017 roku ponownie wyłączono ją z użytkowania ze względu na zły stan techniczny w postaci spróchnienia konstrukcji. W roku 2019 wybudowano, a w 2020 r. oddano dla ruchu turystycznego nową, bezpieczniejszą wieżę widokową na Radziejowej. <br><br>Roztacza się z niej rozległa panorama na wszystkie strony. Wraz z budową wieży wyznaczono nową ścieżkę przyrodniczą „Rogasiowy Szlak” w dolinie Roztoki Małej.<br><br>
+                Oprócz wieży na szczycie znajdują się również pomnik 1000-lecia Polski oraz betonowy obelisk.<br><br>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10375.441981078604!2d20.59443249157528!3d49.449353642807246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e08599115b89d%3A0x29ffd2d39d115cf9!2sRadziejowa!5e0!3m2!1spl!2spl!4v1735819827910!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10375.441981078604!2d20.59443249157528!3d49.449353642807246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e08599115b89d%3A0x29ffd2d39d115cf9!2sRadziejowa!5e0!3m2!1spl!2spl!4v1735819827910!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_radziejowa">Galeria</a><br>
+                <a href="#topografia_radziejowa">Topografia</a><br>
+                <a href="#przyroda_radziejowa">Przyroda</a><br>
+                <a href="#turystyka_radziejowa">Turystyka</a>
+            </div>
+        </div>
+        <div id="main2">
+            <h1>Turbacz</h1>
+            <div class="gallery" id="galeria_turbacz">
+                <img src="imgs/turbacz0.png" class="big_img" id="img2_0" alt="turbacz0">
+                <img src="imgs/turbacz1.png" class="big_img" id="img2_1" alt="turbacz1">
+                <img src="imgs/turbacz2.png" class="big_img" id="img2_2" alt="turbacz2">
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down2()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up2()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Turbacz</b> – najwyższy szczyt Gorców, znajdujący się w centralnym punkcie pasma i tworzący potężny rozróg. Według większości źródeł ma wysokość 1310 m n.p.m. Zbudowany jest z fliszu karpackiego.<br><br><br>
+                <h3 id="topografia_turbacz">Topografia</h3>
+                Z Turbacza odbiega kilka górskich grzbietów. Niektóre z nich blisko szczytu rozgałęziają się:
+                <div class="list">
+                <ul>
+                    <li>Pasmo Gorca we wschodnim kierunku. Od pasma tego na Kiczorze odgałęzia się boczny grzbiet, który poprzez Knurowską Przełęcz przechodzi w długie Pasmo Lubania;</li>
+                    <li>grzbiet Mostownicy i Kudłonia w północno-wschodnim kierunku;</li>
+                    <li>grzbiet Turbaczyka w północnym kierunku;</li>
+                    <li>grzbiet Suchego Gronia w północno-zachodnim kierunku;</li>
+                    <li>grzbiet Obidowca ciągnący się na zachód do Przełęczy Sieniawskiej;</li>
+                    <li>grzbiet Średniego Wierchu, również w zachodnim kierunku;</li>
+                    <li>grzbiet Bukowiny Obidowskiej w południowo-zachodnim kierunku. Odgałęzia się od niego grzbiet Bukowiny Waksmundzkiej.</li>
+                </ul>
+                </div>
+                Sam wierzchołek Turbacza znajduje się poza Gorczańskim Parkiem Narodowym, którego granica przebiega po wschodniej oraz po północnej stronie szczytu. Na szczycie Turbacza, lub tuż w jego pobliżu graniczy z sobą pięć miejscowości: Łopuszna, Waksmund i Obidowa w powiecie nowotarskim oraz Poręba Wielka i Zasadne w powiecie limanowskim.<br><br><br>
+                <h3 id="turystyka_turbacz">Turystyka</h3>
+                Położone pod szczytem, na wysokości 1283 m schronisko PTTK na Turbaczu to okazały kamienny budynek o dwóch prostopadłych skrzydłach z arkadowym wejściem i strzelistym dachem z mansardami, krytym gontem (ponad 100 miejsc noclegowych), otwarty w 1958 roku (projekt: Anna Górska). W pobliżu schroniska znajduje się przekaźnik RTV i telefonii komórkowej. Sam szczyt Turbacza znajduje się 5 minut drogi od schroniska. Jest on mało popularny turystycznie w odróżnieniu od schroniska PTTK.<br><br>
+                Obok schroniska (niewielki, drewniany budynek w lesie) – otwarte w 1980 roku Muzeum Kultury i Turystyki Górskiej PTTK, eksponujące dzieje turystyki w Gorcach, historię schroniska na Turbaczu, opis działalności ruchu oporu podczas II wojny światowej oraz postać Władysława Orkana.<br><br>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10355.623019598104!2d20.101045076824185!3d49.54293081639627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715e2d3b24942a5%3A0x1d5cc3056f12d6e7!2sTurbacz!5e0!3m2!1spl!2spl!4v1735819874050!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10355.623019598104!2d20.101045076824185!3d49.54293081639627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715e2d3b24942a5%3A0x1d5cc3056f12d6e7!2sTurbacz!5e0!3m2!1spl!2spl!4v1735819874050!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <br><br>
+                <h3 id="nazewnictwo_turbacz">Nazewnictwo</h3>
+                W gwarach góralskich nazwa Turbacza jest określana jako: Turbac, Trubac, bądź Turboc.<br><br>
+                Według Władysława Maciejczaka nazwa etnicznie odnosiła się niegdyś jedynie do Hali Turbacz i została błędnie przeniesiona na szczyt, a prawidłowa nazwa ludowa brzmiała: „Kluczki” (odnotowana w księgach austriackich). Nazwa ta do dziś odnosi się do lasu znajdującego się po południowej stronie Gorców. Bywa także używana przez starszych Zagórzan odnosząc się do samego szczytu.<br><br>
+                
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_turbacz">Galeria</a><br>
+                <a href="#topografia_turbacz">Topografia</a><br>
+                <a href="#turystyka_turbacz">Turystyka</a><br>
+                <a href="#nazewnictwo_turbacz">Nazewnictwo</a>
+            </div>
+        </div>
+        <div id="main3">
+            <h1>Tarnica</h1>
+            <div class="gallery" id="galeria_tarnica">
+                <img src="imgs/tarnica0.png" class="big_img" id="img3_0" alt="tarnica0">
+                <img src="imgs/tarnica1.png" class="big_img" id="img3_1" alt="tarnica1">
+                <img src="imgs/tarnica2.png" class="big_img" id="img3_2" alt="tarnica2">
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down3()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up3()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Tarnica</b> (1346 m) – najwyższy szczyt polskich Bieszczadów i województwa podkarpackiego, wznoszący się na krańcu pasma połonin, w grupie tzw. gniazda Tarnicy i Halicza. Należy do Korony Gór Polski.<br><br><br>
+                <h3 id="topografia_tarnica">Topografia</h3>
+                Szczyt Tarnicy wznosi się ponad 500 m nad dolinę Wołosatki i wyróżnia się osobliwą sylwetką. Od sąsiedniego masywu Krzemienia grzbiet (faktycznie zwornikiem jest Tarniczka) oddzielony jest głęboką Przełęczą Goprowską, natomiast z Szerokim Wierchem łączy się charakterystyczną, ostro wciętą w grzbiet przełęczą o wysokości 1286 m, od której pochodzi nazwa góry (w języku rumuńskim słowo „tarnița” oznacza siodło, przełęcz). Wąski, ostry, nieco wydłużony grzbiet góry, z dwoma wyraźnymi wierzchołkami (1346 i 1339 m), wyścielają złomiska skał i zdobią bruzdy naturalnych zagłębień, a także resztki wojennych okopów. <br><br>
+                Z południowej strony opada w dół wysoka skalna ściana, a niżej rozścielają się wielkie pola kamiennego rumoszu. Na głównej kulminacji znajduje się punkt geodezyjny. W 1987 na szczycie ustawiono 7-metrowy krzyż, upamiętniający – wraz z wmurowaną tablicą – pobyt ks. Karola Wojtyły 5 sierpnia 1953. Po złamaniu się krzyża na wiosnę 2000, w dniu 2 września tego roku postawiono nowy stalowy krzyż (liczący ok. 8,5 metra, ważący ok. 500 kg; wyniesiony przez pielgrzymów na Tarnicę w częściach), który 16 września 2000 poświęcił bp Adam Dyczkowski.<br><br><br>
+                <h3 id="turystyka_tarnica">Turystyka</h3>
+                Tarnica stanowi najbardziej atrakcyjny punkt widokowy w polskich Bieszczadach. Oprócz wspaniałej panoramy najbliższych grzbietów polskiej części Bieszczadów, w pogodne dni można dostrzec: Tatry, Gorgany, Ostrą Horę, Połoninę Równą, Połoninę Krasną, Świdowiec, a przy bardzo dobrych warunkach pogodowych możemy dostrzec: Pasmo Wyhorlacko-Gutyjskie, Góry Ignis, górę Vlădeasa i Pietrosula Rodnei w Górach Rodniańskich.<br><br>
+                W rejon tych gór prowadzą zaledwie dwa piesze szlaki turystyczne. Pierwszy to końcowy odcinek Głównego Szlaku Beskidzkiego (Ustroń – Wołosate), wiodący od schroniska w Ustrzykach Górnych (znaki czerwone). Odcinek ten w swojej końcowej partii jest bardzo atrakcyjny widokowo, prowadząc do przełęczy pod Tarnicą 1286 m połoninami Szerokiego Wierchu. <br><br>
+                Drugim jest bardziej stromy szlak niebieski Biała – Grybów, który prowadzi z Wołosatego bezpośrednio na przełęcz pod szczytem Tarnicy. Z przełęczy na szczyt prowadzi krótki (15 min) boczny szlak koloru żółtego. Tuż przy nim, kilkanaście metrów od szczytu, znajduje się Jaskinia w Tarnicy. Wejście do niej zostało zasypane w 2008 roku ze względu na bezpieczeństwo turystów.<br><br>
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10454.540970811659!2d22.715949976483603!3d49.07456774826117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bdf546a9f55a7%3A0x3444bffea3b97f47!2sTarnica!5e0!3m2!1spl!2spl!4v1735819994605!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10454.540970811659!2d22.715949976483603!3d49.07456774826117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bdf546a9f55a7%3A0x3444bffea3b97f47!2sTarnica!5e0!3m2!1spl!2spl!4v1735819994605!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_tarnica">Galeria</a><br>
+                <a href="#topografia_tarnica">Topografia</a><br>
+                <a href="#turystyka_tarnica">Turystyka</a>
+            </div>
+        </div>
+        <div id="main4">
+            <h1>Śnieżnik</h1>
+            <div class="gallery" id="galeria_snieznik">
+                <img src="imgs/snieznik0.png" class="big_img" id="img4_0" alt="snieznik0">
+                <img src="imgs/snieznik1.png" class="big_img" id="img4_1" alt="snieznik1">
+                <img src="imgs/snieznik2.png" class="big_img" id="img4_2" alt="snieznik2">
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down4()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up4()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Śnieżnik</b> (1425 m n.p.m.), zwany też Śnieżnikiem Kłodzkim dawniej Kładską Śnieżką, cz. Králický Sněžník, niem. Glatzer Schneeberg – najwyższy, graniczny szczyt po polskiej stronie w Sudetach Wschodnich i w Masywie Śnieżnika.<br><br><br>
+                <h3 id="topografia_snieznik">Topografia</h3>
+                Śnieżnik jest najwyższym szczytem Masywu Śnieżnika i 17. co do wysokości w całych Sudetach. Jest on jedyną górą w masywie Śnieżnika, która wystaje ponad górną granicę lasu.<br>
+                Śnieżnik jest rozrogiem – zwornikiem sześciu grzbietów:
+                <div class="list">
+                    <ul>
+                        <li>grzbietu północnego ze Żmijowcem, Rudką, Janowcem i Krzyżnikiem, Czarną Górą i Krowiarkami;</li>
+                        <li>północno-wschodniego ramienia góry Stromej (1166 m n.p.m.) i Młyńska (991 m n.p.m.);</li>
+                        <li>wschodniego grzbietu granicznego schodzącego do Przełęczy Płoszczyna;</li>
+                        <li>południowego grzbietu Sušiny i Podbělki, położonego w całości w Czechach;</li>
+                        <li>południowo-zachodniego grzbietu granicznego, z Małym Śnieżnikiem i Trójmorskim Wierchem;</li>
+                        <li>zachodniego ramienia Średniaka (1210 m n.p.m.).</li>
+                    </ul>
+                </div><br><br>
+                Śnieżnik leży na europejskim dziale wodnym mórz Czarnego i Bałtyckiego. Przebieg działu pokrywa się w obrębie szczytu z przebiegiem granicy państwowej – potoki polskiej strony spływają do Bałtyku, czeskiej – do Morza Czarnego.<br><br><br>
+                <h3 id="przyroda_snieznik">Przyroda</h3>
+                Świat roślinny i zwierzęcy Śnieżnika jest najbogatszy w całych Sudetach, ponieważ przebiegają tam granice zasięgów występowania wielu gatunków – sudeckich, karpackich, alpejskich, a nawet śródziemnomorskich.<br><br><br>
+                <h3 id="turystyka_snieznik">Turystyka</h3>
+                Śnieżnik musiał być znany turystom już pod koniec XVIII wieku – z tego okresu pochodzą pierwsze utrwalone informacje (panoramy i wzmianki pisane). Prawdziwy rozkwit turystyki rozpoczął się w 1838 roku, kiedy to Śnieżnik i jego okolice stały się własnością królewny Marianny Orańskiej. Szczyt stał się modnym celem wędrówek – między innymi podziwiano na nim wschody i zachody słońca.<br><br>
+                W 1871 roku na zlecenie księżnej zbudowano na Hali pod Śnieżnikiem schronisko, które stoi do dziś.<br><br>
+                Śnieżnik był tak popularny, że w latach 1895–1899 zbudowano tutaj kamienną wieżę widokową w kształcie cylindrycznej baszty. Wzniesiona została z inicjatywy Kłodzkiego Towarzystwa Górskiego i miała służyć podniesieniu atrakcyjności wycieczek na szczyt. Potężna konstrukcja, nawiązująca do modnego wówczas romantycznego stylu naśladującego średniowiecze, miała 6 kondygnacji i wysokość 33,5 m. Nadano jej imię cesarza Wilhelma I i dobudowano budynek mieszczący małe schronisko.<br><br>
+                W 1912 roku po czeskiej (wówczas austro-węgierskiej) stronie, w pobliżu źródeł Morawy, MSSGV oddało do użytku kolejne schronisko – Schronisko księcia Liechtensteina na Śnieżniku (Fürst Johann Liechtenstein Schutzhaus).<br><br>
+                Po II wojnie światowej infrastruktura turystyczna zaczęła podupadać. W 1971 roku rozebrano czeskie schronisko (do dziś widoczne są fundamenty), a 11 października 1973 roku wysadzono w powietrze solidną, wbrew opiniom o złym stanie technicznym, lecz zaniedbaną wieżę widokową. Jej resztki przez wiele lat tworzyły kulminację na kopule szczytowej góry.<br><br>
+                Dla Czechów symbolem Śnieżnika jest kamienna rzeźba słonia stojąca obok fundamentów schroniska po czeskiej stronie granicy. Rzeźbę ustawili w 1932 roku członkowie grupy artystycznej Jescher zaprzyjaźnieni z dzierżawcą schroniska Liechtensteina Oskarem Gutwinskim. Nazwa grupy miała pochodzić od odgłosu (w języku niemieckim), który wydaje kichający słoń.<br><br>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40885.83254803076!2d16.796417030026436!3d50.17302023712059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711fef610f3dacb%3A0xd522e1a178587742!2zxZpuaWXFvG5paw!5e0!3m2!1spl!2spl!4v1735820026228!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40885.83254803076!2d16.796417030026436!3d50.17302023712059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711fef610f3dacb%3A0xd522e1a178587742!2zxZpuaWXFvG5paw!5e0!3m2!1spl!2spl!4v1735820026228!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_snieznik">Galeria</a><br>
+                <a href="#topografia_snieznik">Topografia</a><br>
+                <a href="#przyroda_snieznik">Przyroda</a><br>
+                <a href="#turystyka_snieznik">Turystyka</a>
+            </div>
+        </div>
+        <div id="main5">
+            <h1>Śnieżka</h1>
+            <div class="gallery" id="galeria_sniezka">
+                <img src="imgs/sniezka0.png" class="big_img" id="img5_0" alt="sniezka0">
+                <img src="imgs/sniezka1.png" class="big_img" id="img5_1" alt="sniezka1">
+                <img src="imgs/sniezka2.png" class="big_img" id="img5_2" alt="sniezka2">
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down5()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up5()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Śnieżka</b> (cz. SněžkaⓘSněžka, niem. Schneekoppe) – najwyższy szczyt Karkonoszy oraz Sudetów, jak również Czech, województwa dolnośląskiego, a także całego Śląska. <i>Najwybitniejszy</i> szczyt Polski i Czech (MDW 1184 m). Jego oficjalna wysokość bezwzględna to 1603,30 m n.p.m. względem średniego poziomu Morza Bałtyckiego. Podawana powszechnie w publikacjach sprzed 2014 roku wysokość 1602 m odnosi się nie do wierzchołka góry, lecz do jednego z punktów osnowy geodezyjnej, zlokalizowanych w obrębie kopuły szczytowej.<br><br><br>
+                <h3 id="topografia_sniezka">Topografia</h3>
+                Śnieżka znacznie góruje nad otaczającymi ją grzbietami. Wznosi się w zachodniej części Czarnego Grzbietu. Na zachodzie Przełęcz pod Śnieżką oddziela ją od Równi pod Śnieżką, ku wschodowi ciągnie się Czarny Grzbiet, natomiast ku południowi odchodzi długie, boczne ramię ze wzniesieniami: Růžová hora, Pěnkavčí vrch i Červený vrch, kończące się na południowym wschodzie, przy ujściu Małej Úpy do Úpy. Ramię to nosi nazwę Růžohorská hornatina.<br><br>
+                Od północnego zachodu piramidę Śnieżki podcinają Kocioł Łomniczki i dolina Łomniczki, od południowego wschodu – Jelení důl i dolina Jeleniego potoku, od południowego zachodu – Úpská jáma i Obří důl.<br><br>
+                Śnieżka zbudowana jest z bardzo odpornych na wietrzenie hornfelsów – skał metamorficznych, powstałych w wyniku przeobrażenia łupków w wyniku oddziaływania intrudującej magmy granitowej w okresie karbońskim. <br><br>
+                Dzięki większej odporności na erozję budujących szczyt hornfelsów od skał otaczających, selektywna erozja doprowadziła w kenozoiku do powstania Śnieżki jako twardzielca wznoszącego się 200 metrów nad penepleną. Po wypiętrzeniu się Karkonoszy w czasie orogenezy alpejskiej, niewysokie wzgórze stało się najwyższym szczytem nowo powstałego pasma górskiego. Zbocza Śnieżki pokrywa gołoborze, powstałe w czasie zlodowacenia w plejstocenie, w warunkach peryglacjalnych. W tym samym czasie powstały kotły lodowcowe, podcinające ją od północnego zachodu i południowego zachodu.<br><br><br>
+                <h3 id="turystyka_sniezka">Turystyka</h3>
+                Śnieżka była jedną z pierwszych gór europejskich licznie odwiedzanych przez turystów. Wiązało się to głównie ze względnie niewielkimi trudnościami technicznymi wejścia na szczyt oraz z tym, że już od XVI wieku liczni kuracjusze przybywali do pobliskich Cieplic Zdroju i dobrze widoczna Śnieżka, dominująca wizualnie nad całymi Karkonoszami, była dla nich istotną atrakcją. <br><br>
+                Ważnymi czynnikami były też liczne, jak na owe czasy, duże budy pasterskie i dobra sieć dróg prowadzących pod kopułę szczytową, co wiązało się z dość znacznym jak na owe czasy zaludnieniem przedgórza Karkonoszy i powszechnością wypasu w samych górach. Poza tym w latach 1563–1566 rektor szkoły w Jeleniej Górze – Krzysztof Schilling dokonał pomiarów i obliczeń wysokości Śnieżki. Choć otrzymany wynik 30 stadiów, czyli około 5500 m ponad dno Kotliny Jeleniogórskiej był bardzo błędny, to dał podstawę do utrzymywania przez długi czas, że jest to jedna z najwyższych gór Europy.<br><br>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10100.530354398346!2d15.729645977703912!3d50.736029676854535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ee91b0d866c4b%3A0xebd8f068bc18f733!2zxZpuaWXFvGth!5e0!3m2!1spl!2spl!4v1735820101703!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10100.530354398346!2d15.729645977703912!3d50.736029676854535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ee91b0d866c4b%3A0xebd8f068bc18f733!2zxZpuaWXFvGth!5e0!3m2!1spl!2spl!4v1735820101703!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_sniezka">Galeria</a><br>
+                <a href="#topografia_sniezka">Topografia</a><br>
+                <a href="#turystyka_sniezka">Turystyka</a>
+            </div>
+        </div>
+        <div id="main6">
+            <h1>Babia Góra</h1>
+            <div class="gallery" id="galeria_babia_gora">
+                <img src="imgs/babia_gora0.png" class="big_img" id="img6_0" alt="babia_gora0">
+                <img src="imgs/babia_gora1.png" class="big_img" id="img6_1" alt="babia_gora1">
+                <img src="imgs/babia_gora2.png" class="big_img" id="img6_2" alt="babia_gora2">
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down6()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up6()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Babia Góra</b> (słow. Babia hora) – masyw górski w Paśmie Babiogórskim należącym do Beskidu Żywieckiego w Beskidach Zachodnich (według słowackiej terminologii są to Oravské Beskydy). Najwyższym szczytem jest Diablak (1724 m, niem. Teufelspitze, czyli Diabelski Szczyt), często nazywany również Babią Górą, jak cały masyw. Jest najwyższym szczytem Beskidów Zachodnich i poza Tatrami najwyższym szczytem w Polsce, drugim co do <i>wybitności</i> (po Śnieżce). <br><br><br>
+                <h3 id="topografia_babia_gora">Topografia</h3>
+                Masyw Babiej Góry rozciąga się od Przełęczy Jałowieckiej Północnej po przełęcz Krowiarki. Wyróżniają się w nim dwa wybitne wierzchołki; Diablak i Mała Babia Góra (1517 m), ale w głównej grani topografowie wyróżniają jeszcze wiele pomniejszych wierzchołków, grzbietów i przełęczy.<br><br>
+                Granią masywu biegnie Wielki Europejski Dział Wodny, a jej częścią zachodnią po Diablaka granica polsko-słowacka. Północne stoki masywu Babiej Góry ograniczone są przez dwa potoki: Jałowiecki Potok spływający spod Jałowieckich Przełęczy (Północnej i Południowej) oraz potok Jaworzynka spływający spod przełęczy Krowiarki. Łączą się one we wsi Zawoja w tzw. Widłach, tworząc rzekę Skawicę. Całe północne stoki masywu znajdują się w obrębie polskiej miejscowości Zawoja. <br><br>
+                Od stron południowej i wschodniej sytuacja jest bardziej skomplikowana. Tam masyw Babiej Góry ciągnie się od Półgórzanki na zachodzie po potoki Syhlec i Zubrzyca na wschodzie, a od dolnej części masywu aż po Czarną Orawę i Jezioro Orawskie ciągną się trzy niskie i długie grzbiety należące do Działów Orawskich: Dział Rabczycki, Dział Lipnicki i Dział Zubrzycki. Od tej strony stoki Babiej Góry należą do dwóch słowackich miejscowości – Orawska Półgóra i Rabczyce oraz czterech polskich: Lipnica Wielka, Kiczory, Lipnica Mała i Zubrzyca Górna.<br><br>
+                Wysokość względna Babiej Góry wynosi dla stoków południowych 900 metrów, a dla północnych 1100 metrów i jest największą poza Tatrami w Polsce. Babia Góra przewyższa otaczające ją szczyty o około 200–600 metrów[11][12]. Cechuje ją również duża izolacja (duża odległość od innych gór porównywalnej lub większej wysokości)[13].<br><br><br>
+                <h3 id="turystyka_babia_gora">Turystyka</h3>
+                Szlaki prowadzą na szczyt również od strony słowackiej – to właśnie z Orawskiej Półgóry poprowadzono na szczyt w 1894 r. pierwszy znakowany szlak turystyczny, wytyczył go Beskidenverein (wówczas szlak był w granicach Węgier). Rok później BV poprowadził szlaki od strony polskiej (wówczas galicyjskiej) – były to jedne z pierwszych szlaków w polskich Beskidach Zachodnich.<br><br>
+                Południowymi stokami masywu biegnie droga zwana Pańskim Chodnikiem (także Pańską Ścieżką lub Rajsztagiem, z niem. Reich – państwo, Steg – ścieżka). Była ona jednym ze starych szlaków komunikacyjnych pod Babią Górą, łączącym Zubrzycę z Półgórą (słowacka Polhora). Wybudowana została przez austriacką administrację leśną, a rozbudowana po I wojnie światowej przez Wojsko Polskie jako główny dojazd do Lipnicy Wielkiej – Przywarówki. Droga terenowa łączy Śmietanową, Stachurówkę, Nad Wykrotami, Wykroty, Parking Polana Stańcówka, przecina granicę ze Słowacją (Stańcowe Siodło) i biegnie dalej przez Prírodný Prameň – Roveň, Chatę Slaná Voda (Słona Woda) do Półgóry i nadaje się do wycieczek kolarskich.<br><br>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10349.211452688649!2d19.52049667684627!3d49.5731757578531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715d16a4efe96d7%3A0x95aad3bd66b951e1!2sBabia%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1735820128133!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+                </div>
+                <div class="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10349.211452688649!2d19.52049667684627!3d49.5731757578531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715d16a4efe96d7%3A0x95aad3bd66b951e1!2sBabia%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1735820128133!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+                </div>
+                <h3 id="nazewnictwo_babia_gora">Nazewnictwo</h3>
+                Pochodzenie nazwy Babia Góra tłumaczą liczne legendy ludowe. Jedna z nich mówi, że jest to kupa kamieni wysypanych przed chałupą przez babę – olbrzymkę, według innej to kochanka zbójnika, która skamieniała z żalu widząc, jak niosą jej zabitego ukochanego. Według innych legend nazwa góry pochodzi od tego, że w jaskiniach pod tą górą zbójnicy ukrywali swoje branki. Nazwa może też mieć powiązanie z niektórymi znaczeniami słowa baba (rodzaj ciasta lub kamienny posąg kultowy). Kazimierz Sosnowski podawał o nazwie, iż ...świat uczony wywodzić ją chce od prasłowiańskiego bóstwa „Baba” (...), czczonego jako „matka-żywicielka”. Jednocześnie wskazywał, że powszechnie nazwę góry tłumaczy się jej przysadzistym kształtem, podobnym jakoby do siedzącej baby.<br><br>
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_babia_gora">Galeria</a><br>
+                <a href="#topografia_babia_gora">Topografia</a><br>
+                <a href="#turystyka_babia_gora">Turystyka</a><br>
+                <a href="#nazewnictwo_babia_gora">Nazewnictwo</a>
+            </div>
+        </div>
+        <div id="main7">
+            <h1>Rysy</h1>
+            <div class="gallery" id="galeria_rysy">
+                <img src="imgs/rysy0.png" class="big_img" id="img7_0" alt="rysy0">
+                <img src="imgs/rysy1.png" class="big_img" id="img7_1" alt="rysy1">
+                <img src="imgs/rysy2.png" class="big_img" id="img7_2" alt="rysy2">
+                <table class="arrows">
+                    <tr>
+                        <td class="arrows_each" onclick="change_counter_down7()">&#8592;</td>
+                        <td class="arrows_each" onclick="change_counter_up7()">&#8594;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <b>Rysy</b> (niem. Meeraugspitze, słow. Rysy, węg. Tengerszem-csúcs[1]) – góra zlokalizowana na granicy polsko-słowackiej, w Tatrach Wysokich (jednej z części Tatr). Ma trzy wierzchołki, z których najwyższy jest środkowy (2501 m n.p.m.), znajdujący się w całości na terytorium Słowacji. Wierzchołek północno-zachodni, przez który biegnie granica, stanowi najwyżej położony punkt Polski (według większości najbardziej wiarygodnych źródeł 2499 m – więcej informacji w sekcji „Topografia”) i należy do Korony Europy.<br><br><br>
+                <h3 id="topografia_rysy">Topografia</h3>
+                Masyw Rysów posiada trzy wierzchołki. Na granicy polsko-słowackiej znajduje się średni co do wysokości wierzchołek północno-zachodni, którego różne pomiary dały wysokość od 2498,7 do 2499,6 m (zgodną z tradycyjnie uznawaną wartością 2499 m). Wierzchołek ten jest najwyżej położonym punktem Polski. Spośród klasycznych pomiarów geodezyjnych wykonanych dla tego wierzchołka najdokładniejsze przeprowadzono w 1988 r., kiedy metodą precyzyjnej niwelacji trygonometrycznej wyznaczono, niezależnie od strony polskiej oraz słowackiej, wysokość punktu geodezyjnego zlokalizowanego 60 cm poniżej szczytu. Otrzymano wynik 2498,712 m od strony polskiej i 2498,724 m od strony słowackiej (różnica jedynie 1,2 cm) – a więc wysokość północno-zachodniego wierzchołka Rysów wynoszącą (po zaokrągleniu do 0,1 m) 2499,3 m.<br><br><br>
+                <h3 id="przyroda_rysy">Przyroda</h3>
+                Szczyt Rysów jest prawdziwym unikatem, jeśli chodzi o bogactwo flory. Na wysokości 2483–2503 m występują tu jeszcze 63 gatunki roślin kwiatowych, głównie z grupy roślin alpejskich. Z rzadkich roślin występują m.in. ukwap karpacki, skalnica odgiętolistna i wiechlina tatrzańska – gatunki w Polsce obecne tylko w Tatrach i to na nielicznych stanowiskach.<br><br>
+                Na południowych zboczach przebywają kozice i świstaki. Na sam szczyt dochodzą lisy. Występuje tu również stale kilka gatunków ptaków i szereg gatunków niższych zwierząt: owadów i mięczaków. W pobliżu wierzchołka po raz pierwszy odłowiono endemicznego pajęczaka Polonozercon tatrensis.<br><br><br>
+                <h3 id="nazewnictwo_rysy">Nazewnictwo</h3>
+                Nazwa Rysy nie pochodzi, jak powszechnie się uważa, od ukośnego żlebu widocznego w masywie góry (tzw. Rysy), ale od pożłobionych zboczy całego kompleksu Niżnich Rysów, Żabiego Szczytu Wyżniego i Żabiego Mnicha. Nazwę utworzyli polscy górale i była ona w użyciu co najmniej od początków XIX w. „Skalne żleby albo rysy (Risse), wypełnione wiecznym śniegiem, sięgają od głównego grzbietu aż do powierzchni Czarnego Stawu” – pisał niemiecki turysta już w 1827 r. Wkrótce Rysami określali polscy turyści całą grań, zamykającą kocioł Czarnego Stawu: „Rysy to jest grzbiet okalający Czarny Staw” (Feliks Berdau, 1855); „Olbrzymie skały zwane Rysy (...) obstąpiły półkolem jezioro” (Maria Steczkowska, 1858); „Staw ten otoczony olbrzymimi skałami nazwanymi Rysy” (Onufry Trembecki, 1861); „Dzikie turnie Rysami zwane w krąg otaczają Czarny Staw” (Walery Eljasz, 1873). <br><br>
+                W połowie XIX w. turyści niemieckojęzyczni ze strony węgierskiej zaczęli używać dla szczytu nazwy Meeraugspitze, natomiast Polacy – w miarę rozwoju taternictwa i zagęszczania nazw poszczególnych formacji grzbietu – zawęzili stosowanie nazwy Rysy do najwyższego szczytu w grani. Podsumował to wkrótce Tytus Chałubiński: „Szczyt sterczący nad (...) Czarnym Stawem zowią zakopianie Rysami, węgierscy i niemieccy turyści Morskookim Szczytem (Meer-Augenspitze), Słowacy zaś Wagą”.<br><br><br>
+                <h3 id="turystyka_rysy">Turystyka</h3>
+                Wypadki w drodze na Rysy zdarzają się od początków turystyki tatrzańskiej. Do ich najczęstszych przyczyn zaliczają się: lekceważenie zalegającego (nieraz do późnego lata) śniegu, brak kondycji fizycznej i psychicznej, a także zaznajomienia ze stromizną, nieodpowiednie obuwie i odzienie, kruche skały, nadmierne pragnienie zdobycia szczytu.<br><br>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10432.42698075088!2d20.07776427655972!3d49.17956101877166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47158a72b396cebf%3A0xacf301744371f702!2sRysy!5e0!3m2!1spl!2spl!4v1735820169105!5m2!1spl!2spl" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapa_tel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10432.42698075088!2d20.07776427655972!3d49.17956101877166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47158a72b396cebf%3A0xacf301744371f702!2sRysy!5e0!3m2!1spl!2spl!4v1735820169105!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="nav">
+                Nawigacja<br>
+                <a href="#logo">Początek</a><br>
+                <a href="#galeria_rysy">Galeria</a><br>
+                <a href="#topografia_rysy">Topografia</a><br>
+                <a href="#nazewnictwo_rysy">Nazewnictwo</a><br>
+                <a href="#turystyka_rysy">Turystyka</a>
+            </div>
+        </div>
+        <div id="main8">
+            <div class="info">
+                <form action="mailto:Karol.Kaczynski@tm1.edu.pl" method="post">
+        
+                    <label for="imie">Imię:</label>
+                    <input name="imie" id="imie" type="text" size="8" maxlength="10"><br>
+                    <label for="nazw">Nazwisko:</label>
+                    <input name="nazw" id="nazw" type="text" size="8" maxlength="20"><br>
+                    <label for="wiek">Wiek:</label>
+                    <input name="wiek" id="wiek" type="number" min="1" max="1000"><br>
+            
+                    <h3>1. Jakiej wysokości są Rysy(Polski wierzchołek)?</h3>
+                    <input type="radio" name="q1" id="small" value="small"><label for="small">1224 m n.p.m.</label><br>
+                    <input type="radio" name="q1" id="medium" value="medium"><label for="medium">2499 m n.p.m.</label><br>
+                    <input type="radio" name="q1" id="big" value="big"><label for="big">3295 m n.p.m.</label><br><br>
+            
+                    <h3>2. Zaznacz 2 najwybitniejsze góry z podanych.</h3>
+                    <input type="checkbox" name="q2" id="rysy" value="rysy"><label for="rysy">Rysy</label><br>
+                    <input type="checkbox" name="q2" id="radziejowa" value="radziejowa"><label for="radziejowa">Radziejowa</label><br>
+                    <input type="checkbox" name="q2" id="babia_gora" value="babia_gora"><label for="babia_gora">Babia Góra</label><br>
+                    <input type="checkbox" name="q2" id="sniezka" value="sniezka"><label for="sniezka">Śnieżka</label><br>
+                    <input type="checkbox" name="q2" id="snieznik" value="snieznik"><label for="snieznik">Śnieżnik</label><br>
+                    <input type="checkbox" name="q2" id="turbacz" value="turbacz"><label for="turbacz">Turbacz</label><br>
+            
+                    <h3>3. Która z tych gór ma mniej niż 1266,5 m n.p.m.?</h3>
+                    <select id="q3" name="q3">
+                        <option value="turbacz">Turbacz</option>
+                        <option value="radziejowa">Radziejowa</option>
+                        <option value="rysy">Rysy</option>
+                        <option value="skrzyczne">Skrzyczne</option>
+                        <option value="sniezka">Śnieżka</option>
+                        <option value="snieznik">Śnieżnik</option>
+                    </select><br><br>
+            
+                    <br>
+                    <label for="email">Podaj e-mail na który wyślemy wynik w ciągu kilku nastepnych dni:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <input type="reset" value="Wyczyść formularz">
+                    <input type="submit" value="Wyślij formularz">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">Karol Kaszczyński 2tc</div>
+    <script src="script.js"></script>
+</body>
+</html>
