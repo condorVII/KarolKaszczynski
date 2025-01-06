@@ -90,6 +90,8 @@ html, body {
 #main {
     width: 95%;
     height: 300%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main0 {
