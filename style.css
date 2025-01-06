@@ -351,10 +351,9 @@ h1 {
     .nav {display: none;}
     #home {left: 1%; right: auto;}
     #home_img { width: 50%; height: 50%;}
-    #vid0 {display: none;}
-    #vid0_tel {display: block;}
     #vid1 {display: none;}
     #vid1_tel {display: block;}
     .mapa {display: none;}
     .mapa_tel {display: block;}
+    .gallery {width: 75%; height: 75%;}
 }
