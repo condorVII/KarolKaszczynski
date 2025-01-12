@@ -331,7 +331,12 @@ h1 {
     width: 75%;
 }
 
+.mapa {
+    width: 50%;
+}
+
 .mapa_tel {
+    width: 100%;
     display: none;
 }
 
